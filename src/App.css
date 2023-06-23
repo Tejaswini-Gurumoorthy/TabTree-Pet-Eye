@@ -1,5 +1,9 @@
+*{
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  box-sizing: border-box;
 }
 
 .background-login-signup {
@@ -8,4 +12,70 @@
   background-attachment: relative;
   height: 100vh;
   background-position: 100% 0%;
+}
+.logo{
+  width: 344.174560546875px;
+  height: 252.38677978515625px;
+  top: 227px;
+  left: 135px;
+
+}
+
+.navbar{
+  background-color:#C87D25;
+
+}
+.navbar-logo{
+  margin: 6px;
+}
+
+.text-box-plain{
+  border: 1px #C8C8C8 solid;
+  height: 55px;
+  width: 325px;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+}
+
+.text-box-plain:focus{
+  border: 1.5px #D9D9D9 solid;
+}
+
+.dashboard-body{
+  margin-left: 85px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 76px;
+  
+}
+
+.dashboard-row{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.dashboard-footer{
+  display: flex;
+  margin-right: 80px;
+  justify-content: flex-end;
+}
+
+.button-next{
+  height: 57px;
+  width: 173x;
+  background-color: #C87D25;
+  padding: 10px 58px ;
+  border-radius: 10px;
+  box-shadow: none;
+  border: 0;
+  color: #fff;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  font-weight: 700;
+
 }

@@ -1,6 +1,9 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Login from './pages/Login';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import { faS } from '@fortawesome/free-solid-svg-icons';
+import Dashboard1 from './pages/Dashboard1';
 
 
 function App() {
@@ -8,7 +11,7 @@ function App() {
    <>
    <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Login/>}>
+        <Route path='/' element={<Dashboard1/>}>
 
         </Route>
       </Routes>
