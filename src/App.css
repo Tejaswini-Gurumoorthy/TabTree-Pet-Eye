@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.background-login-signup {
+  background-image: url('./assets/bg-vector1.png');
+  background-repeat: no-repeat;
+  background-attachment: relative;
+  height: 100vh;
+  background-position: 100% 0%;
+}
