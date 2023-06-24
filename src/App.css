@@ -1,4 +1,5 @@
 *{
+  
   box-sizing: border-box;
 }
 .App {
@@ -26,10 +27,12 @@
 /* Navbar */
 .navbar{
   background-color:#C87D25;
+  min-height: fit-content;
 
 }
 .navbar-logo{
-  margin: 6px;
+  margin-left: 6px;
+  margin-top: 5px;
 }
 
 /* textbox without icon */
@@ -64,25 +67,23 @@
   margin: 40px 0;
 }
 
+/* button */
 .dashboard-footer{
   display: flex;
-  margin-right: 80px;
   justify-content: flex-end;
+  margin-right: 80px;
 }
-
-/* button */
 .button-next{
-  height: 57px;
-  width: 173x;
   background-color: #C87D25;
-  padding: 10px 58px ;
+  padding: 10px 58px;
   border-radius: 10px;
   box-shadow: none;
   border: 0;
   color: #fff;
-  margin-bottom: 50px;
-  margin-left: 10px;
-  font-weight: 700;
+
+  font-weight: bold;
+  font-size: 24;
+  cursor: pointer;
 
 }
 .icon-input-container {
@@ -131,7 +132,7 @@
 
 .RSPBprogressBar {
   height: 2px;
-  width: 30%;
+  width: 68%;
   line-height: 1;
   border-radius: 10px;
   position: relative;
