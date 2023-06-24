@@ -34,20 +34,20 @@ function Dashboard1() {
   return (
     <div>
       <NavBar />
-      <MultiStepProgressBar page={page} onPageNumberClick={nextPageNumber}/>
+      <MultiStepProgressBar page={1} onPageNumberClick={nextPageNumber}/>
       <div className='dashboard-body'>
         <div className='dashboard-row'>
           <TextBox placeholder='Name' />
           <TextBox placeholder='Mobile' />
           <TextBox placeholder='Secondary Mobile Number' />
         </div>
+        <div className='dashboard-subheading'>
+          Address:
+        </div>
         <div className='dashboard-row'>
           <TextBox placeholder='Door No' />
           <TextBox placeholder='Area' />
           <TextBox placeholder='City' />
-        </div>
-        <div>
-          Address:
         </div>
         <div className='dashboard-row'>
           <TextBox placeholder='State' />
