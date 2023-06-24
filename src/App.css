@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* Login-signup */
 .background-login-signup {
   background-image: url('./assets/bg-vector1.png');
   background-repeat: no-repeat;
@@ -13,6 +14,7 @@
   height: 100vh;
   background-position: 100% 0%;
 }
+
 .logo{
   width: 344.174560546875px;
   height: 252.38677978515625px;
@@ -21,6 +23,7 @@
 
 }
 
+/* Navbar */
 .navbar{
   background-color:#C87D25;
 
@@ -29,6 +32,7 @@
   margin: 6px;
 }
 
+/* textbox without icon */
 .text-box-plain{
   border: 1px #C8C8C8 solid;
   height: 55px;
@@ -43,6 +47,7 @@
   border: 1.5px #D9D9D9 solid;
 }
 
+/* Dashboard */
 .dashboard-body{
   margin-left: 85px;
   margin-right: 80px;
@@ -65,6 +70,7 @@
   justify-content: flex-end;
 }
 
+/* button */
 .button-next{
   height: 57px;
   width: 173x;
@@ -79,3 +85,102 @@
   font-weight: 700;
 
 }
+.icon-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-wrapper {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.input-field {
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.indexedStep {
+  color: rgb(190, 190, 190);
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(206, 206, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indexedStep.accomplished {
+  background-color: #C87D25;
+  color: white;
+  border-style: none;
+}
+
+.RSPBprogressBar {
+  height: 2px;
+  width: 30%;
+  line-height: 1;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgb(207, 207, 207);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 0;
+  margin: 20px auto;
+}
+
+.RSPBprogressBar .RSPBstep {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  transition-property: all;
+  transition-timing-function: ease;
+}
+
+.RSPBprogressBar .RSPBprogressBarText {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.RSPBprogressBar .RSPBprogression {
+  position: absolute;
+  transition: width 0.3s ease;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background: #C87D25;
+  z-index: -1;
+}
+
+@media screen and (max-width: 480px) {
+  .indexedStep{
+      width: 15px;
+      height: 15px;
+      font-size: 6px;
+  }
+}
+
+
+

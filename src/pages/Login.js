@@ -1,12 +1,11 @@
 import React from 'react'
 import '../App.css';
-import logo from '../assets/logo.png';
-import InputWithIcon from '../components/TextBox';
+import TextWithIcon from '../components/TextWithIcon';
 
 function Login() {
   return (
     <div className='background-login-signup'>
-      <InputWithIcon/>
+    <TextWithIcon icon="fa fa-user" placeholder="Name"/>
     </div>
   )
 }

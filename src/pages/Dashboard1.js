@@ -1,13 +1,13 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
-import ProgressBar from '../components/ProgressBar'
+import MultiStepProgressBar from '../components/MultiStepProgressBar'
 import TextBox from '../components/TextBox'
 
 function Dashboard1() {
   return (
     <div>
       <NavBar />
-      <ProgressBar />
+      <MultiStepProgressBar page={1}/>
       <div className='dashboard-body'>
         <div className='dashboard-row'>
           <TextBox placeholder='Name' />
