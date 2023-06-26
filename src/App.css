@@ -156,11 +156,15 @@
 .text-box-plain {
   height: 55px;
   width: 325px;
+  font-size: 16px;
+  font-weight: 200;
   border: 1px #C8C8C8 solid;
   border-radius: 10px;
   padding-top: 15px;
   padding-bottom: 16px;
   padding-left: 32px;
+  
+  order: 1;
 
 
 }
@@ -174,7 +178,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 76px;
 
 }
 
@@ -190,13 +193,16 @@
 
 /* button */
 .dashboard-footer {
+  bottom: 0%;
   display: flex;
   justify-content: flex-end;
   margin-right: 80px;
+  margin-bottom: 6.94vh;
 }
 
 .button-back {
   background-color: #fff;
+  height: 7.9vh;
   padding: 10px 58px;
   border: 1px #C87D25 solid;
   border-radius: 10px;
@@ -205,12 +211,13 @@
   margin-right: 23px;
 
   font-weight: bold;
-  font-size: 24;
+  font-size: 20px;
   cursor: pointer;
 }
 
 .button-next {
   background-color: #C87D25;
+  height: 7.9vh;
   padding: 10px 58px;
   border-radius: 10px;
   box-shadow: none;
@@ -218,7 +225,7 @@
   color: #fff;
 
   font-weight: bold;
-  font-size: 24;
+  font-size: 20px;
   cursor: pointer;
 
 }
@@ -331,4 +338,15 @@
 .terms-and-conditions {
   margin-left: 5.7vw;
   margin-right: 13.2vw;
+}
+.progress-bar-headings-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 20px auto;
+}
+.progress-bar-headings{
+  font-weight: 700;
+  font-size: 16px;
+  color: #C87D25;
 }

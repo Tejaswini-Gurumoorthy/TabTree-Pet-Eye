@@ -15,66 +15,75 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
   } else if (page === "pagefour") {
     stepPercentage = 75;
   }
-  else if (page === "pagefive"){
-    stepPercentage= 100;
+  else if (page === "pagefive") {
+    stepPercentage = 100;
   }
   else {
     stepPercentage = 0;
   }
 
   return (
-    <ProgressBar percent={stepPercentage}>
-      <Step>
-        {({ accomplished, index }) => (
-          <div
-            className={`indexedStep ${accomplished ? "accomplished" : null}`}
-            onClick={() => onPageNumberClick("1")}
-          >
-            <FontAwesomeIcon icon={faCheck} className="check-icon"/>
-          </div>
-        )}
-      </Step>
-      <Step>
-        {({ accomplished, index }) => (
-          <div
-            className={`indexedStep ${accomplished ? "accomplished" : null}`}
-            onClick={() => onPageNumberClick("2")}
-          >
-            <FontAwesomeIcon icon={faCheck} className="check-icon"/>
-          </div>
-        )}
-      </Step>
-      <Step>
-        {({ accomplished, index }) => (
-          <div
-            className={`indexedStep ${accomplished ? "accomplished" : null}`}
-            onClick={() => onPageNumberClick("3")}
-          >
-            <FontAwesomeIcon icon={faCheck} className="check-icon"/>
-          </div>
-        )}
-      </Step>
-      <Step>
-        {({ accomplished, index }) => (
-          <div
-            className={`indexedStep ${accomplished ? "accomplished" : null}`}
-            onClick={() => onPageNumberClick("4")}
-          >
-            <FontAwesomeIcon icon={faCheck} className="check-icon"/>
-          </div>
-        )}
-      </Step>
-      <Step>
-      {({ accomplished, index }) => (
-          <div
-            className={`indexedStep ${accomplished ? "accomplished" : null}`}
-            onClick={() => onPageNumberClick("5")}
-          >
-            <FontAwesomeIcon icon={faCheck} className="check-icon"/>
-          </div>
-        )}
-      </Step>
-    </ProgressBar>
+    <div>
+      <ProgressBar percent={stepPercentage}>
+        <Step>
+          {({ accomplished }) => (
+            <div
+              className={`indexedStep ${accomplished ? "accomplished" : null}`}
+              onClick={() => onPageNumberClick("1")}
+            >
+              <FontAwesomeIcon icon={faCheck} className="check-icon" />
+            </div>
+          )}
+        </Step>
+        <Step>
+          {({ accomplished }) => (
+            <div
+              className={`indexedStep ${accomplished ? "accomplished" : null}`}
+              onClick={() => onPageNumberClick("2")}
+            >
+              <FontAwesomeIcon icon={faCheck} className="check-icon" />
+            </div>
+          )}
+        </Step>
+        <Step>
+          {({ accomplished }) => (
+            <div
+              className={`indexedStep ${accomplished ? "accomplished" : null}`}
+              onClick={() => onPageNumberClick("3")}
+            >
+              <FontAwesomeIcon icon={faCheck} className="check-icon" />
+            </div>
+          )}
+        </Step>
+        <Step>
+          {({ accomplished }) => (
+            <div
+              className={`indexedStep ${accomplished ? "accomplished" : null}`}
+              onClick={() => onPageNumberClick("4")}
+            >
+              <FontAwesomeIcon icon={faCheck} className="check-icon" />
+            </div>
+          )}
+        </Step>
+        <Step>
+          {({ accomplished }) => (
+            <div
+              className={`indexedStep ${accomplished ? "accomplished" : null}`}
+              onClick={() => onPageNumberClick("5")}
+            >
+              <FontAwesomeIcon icon={faCheck} className="check-icon" />
+            </div>
+          )}
+        </Step>
+      </ProgressBar>
+      <div className="progress-bar-headings-wrapper">
+        <div className="progress-bar-headings">Pet Owner Details</div>
+        <div className="progress-bar-headings">Pet Information</div>
+        <div className="progress-bar-headings">Pet Proof</div>
+        <div className="progress-bar-headings">Pet Medical Records</div>
+        <div className="progress-bar-headings">Terms and Conditions</div>
+      </div>
+    </div>
   );
 };
 
