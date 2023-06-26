@@ -2,8 +2,10 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import MultiStepProgressBar from '../components/MultiStepProgressBar'
 import FileInputBox from '../components/FileInputBox'
+import { useNavigate } from 'react-router-dom';
 
 function Dashboard3() {
+  const navigate= useNavigate();
   return (
     <div>
     <NavBar />
@@ -19,8 +21,8 @@ function Dashboard3() {
       </div>
     </div>
     <div className='dashboard-footer'>
-    <button className='button-back'>Back</button>
-    <button className='button-next'>Next</button>
+    <button className='button-back' onClick={()=>{navigate('/dashboard2')}}>Back</button>
+    <button className='button-next' onClick={()=>{navigate('/dashboard4')}}>Next</button>
     </div>
   </div>
   )

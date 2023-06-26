@@ -1,7 +1,8 @@
-*{
-  
+* {
+
   box-sizing: border-box;
 }
+
 .App {
   text-align: center;
   box-sizing: border-box;
@@ -11,48 +12,54 @@
 .background-login-signup {
   background-image: url('./assets/bg-vector1.png');
   background-repeat: no-repeat;
-  background-attachment:fixed;
+  background-attachment: fixed;
   height: 100vh;
   background-position: 100% 0%;
   display: flex;
   justify-content: space-around;
 
 }
-.logo-container{
+
+.logo-container {
   display: flex;
   align-items: center;
-  
+
 }
-.logo-text{
+
+.logo-text {
   font-weight: 400;
   font-size: 40px;
 }
 
-.login-form{
+.login-form {
   width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.login-header{
+
+.login-header {
   color: #ffffff;
   font-weight: 700;
   font-size: 40px;
   margin-bottom: 3.47vh;
 }
-.login-footer-statement{
+
+.login-footer-statement {
   margin-top: 1.8vh;
   align-self: flex-end;
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
 }
-.login-footer-statement-register{
+
+.login-footer-statement-register {
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
 }
-.login-button{
+
+.login-button {
   border: none;
   height: 8.19vh;
   width: 29.21vw;
@@ -61,20 +68,24 @@
   border-radius: 10px;
   color: #ffffff;
   background-color: #000000;
+  cursor: pointer;
 }
-.login-footer-line{
+
+.login-footer-line {
   width: 72px;
   border: 0.5px #262427 solid;
 
 }
-.continue-with{
+
+.continue-with {
   font-weight: 400;
   font-size: 12px;
   margin: auto 4px;
-  color:#26242780;
+  color: #26242780;
   ;
 }
-.login-footer-continue-with-element{
+
+.login-footer-continue-with-element {
   align-self: center;
   display: flex;
   align-items: center;
@@ -82,12 +93,13 @@
   margin-bottom: 1.28vh;
 
 }
-.login-signin-options{
+
+.login-signin-options {
   display: flex;
   justify-content: space-around;
 }
 
-.logo{
+.logo {
   width: 344.174560546875px;
   height: 252.38677978515625px;
   top: 227px;
@@ -95,7 +107,7 @@
 
 }
 
-.input-field{
+.input-field {
   height: 8.19vh;
   width: 29.21vw;
   margin-bottom: 3.19vh;
@@ -103,74 +115,88 @@
   border-radius: 10px;
   font-size: 20px;
   padding-left: 65px;
-  
-  
+
+
 }
-.icon{
-  height: 50px;
-  width: 50px;
-  background-color: brown;
-  
+.file-input-icon-wrapper{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+.icon {
+  height: 25px;
+  width: 25px;
+  color: #C8C8C8;
+
 }
 
-.input-field::placeholder{
+.input-field::placeholder {
   color: #C8C8C8;
   font-weight: 300;
   font-size: 20px;
 }
 
 /* Navbar */
-.navbar{
-  background-color:#C87D25;
+.navbar {
+  background-color: #C87D25;
   min-height: fit-content;
 
 }
-.navbar-logo{
+
+.navbar-logo {
   margin-left: 6px;
   margin-top: 5px;
 }
 
 /* textbox without icon */
-.text-box-plain{
+.text-box-plain {
   height: 55px;
   width: 325px;
+  border: 1px #C8C8C8 solid;
   border-radius: 10px;
   padding-top: 15px;
   padding-bottom: 16px;
   padding-left: 32px;
-  
-  
+
+
 }
 
 
 
 /* Dashboard */
-.dashboard-body{
+.dashboard-body {
   margin-left: 85px;
   margin-right: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 76px;
-  
+
 }
 
-.dashboard-row{
+.dashboard-row {
   display: flex;
   justify-content: space-between;
   margin: 40px 0;
 }
-.dashboard-subheading{
+
+.dashboard-subheading {
   font-size: large;
 }
+
 /* button */
-.dashboard-footer{
+.dashboard-footer {
   display: flex;
   justify-content: flex-end;
   margin-right: 80px;
 }
-.button-back{
-  background-color:#fff;
+
+.button-back {
+  background-color: #fff;
   padding: 10px 58px;
   border: 1px #C87D25 solid;
   border-radius: 10px;
@@ -182,7 +208,8 @@
   font-size: 24;
   cursor: pointer;
 }
-.button-next{
+
+.button-next {
   background-color: #C87D25;
   padding: 10px 58px;
   border-radius: 10px;
@@ -195,6 +222,7 @@
   cursor: pointer;
 
 }
+
 .file-input-container {
   border: 1px #C8C8C8 solid;
   height: 55px;
@@ -207,21 +235,25 @@
   align-items: center;
   justify-content: space-between;
   /* background-color: blue; */
-  
+
 }
 
 .file-input-icon-wrapper {
   position: relative;
   order: 2;
-} 
+}
 
-.file-input-field{
+.file-input-field {
   font-size: 16px;
   font-weight: 400;
   color: #C8C8C8;
   order: 1;
 }
 
+.check-icon{
+  height: 20px;
+  width: 20px;
+}
 .indexedStep {
   color: rgb(190, 190, 190);
   width: 30px;
@@ -289,16 +321,14 @@
 }
 
 @media screen and (max-width: 480px) {
-  .indexedStep{
-      width: 15px;
-      height: 15px;
-      font-size: 6px;
+  .indexedStep {
+    width: 15px;
+    height: 15px;
+    font-size: 6px;
   }
 }
-.terms-and-conditions{
+
+.terms-and-conditions {
   margin-left: 5.7vw;
   margin-right: 13.2vw;
 }
-
-
-

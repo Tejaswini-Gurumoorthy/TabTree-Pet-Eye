@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import NavBar from '../components/NavBar'
 import MultiStepProgressBar from '../components/MultiStepProgressBar'
 import TextBox from '../components/TextBox'
+import { useNavigate } from 'react-router-dom';
 
 function Dashboard1() {
   const [page, setPage] = useState("pageone");
 
+  const navigate = useNavigate();
   const nextPage = (page) => {
     setPage(page);
   };
@@ -34,7 +36,7 @@ function Dashboard1() {
   return (
     <div>
       <NavBar />
-      <MultiStepProgressBar page={1} onPageNumberClick={nextPageNumber}/>
+      <MultiStepProgressBar page={1} onPageNumberClick={nextPageNumber} />
       <div className='dashboard-body'>
         <div className='dashboard-row'>
           <TextBox placeholder='Name' />
@@ -56,7 +58,9 @@ function Dashboard1() {
         </div>
       </div>
       <div className='dashboard-footer'>
-      <button className='button-next'>Next</button>
+        <button className='button-next' onClick={() => {
+          navigate('/dashboard2')
+        }}>Next</button>
       </div>
     </div>
   )

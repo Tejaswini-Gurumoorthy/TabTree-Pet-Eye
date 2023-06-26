@@ -1,6 +1,8 @@
 import React from "react";
 import "../App.css";
 import { ProgressBar, Step } from "react-step-progress-bar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
   var stepPercentage = 0;
@@ -28,7 +30,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
             className={`indexedStep ${accomplished ? "accomplished" : null}`}
             onClick={() => onPageNumberClick("1")}
           >
-            {index+1}
+            <FontAwesomeIcon icon={faCheck} className="check-icon"/>
           </div>
         )}
       </Step>
@@ -38,7 +40,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
             className={`indexedStep ${accomplished ? "accomplished" : null}`}
             onClick={() => onPageNumberClick("2")}
           >
-            {index + 1}
+            <FontAwesomeIcon icon={faCheck} className="check-icon"/>
           </div>
         )}
       </Step>
@@ -48,7 +50,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
             className={`indexedStep ${accomplished ? "accomplished" : null}`}
             onClick={() => onPageNumberClick("3")}
           >
-            {index + 1}
+            <FontAwesomeIcon icon={faCheck} className="check-icon"/>
           </div>
         )}
       </Step>
@@ -58,7 +60,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
             className={`indexedStep ${accomplished ? "accomplished" : null}`}
             onClick={() => onPageNumberClick("4")}
           >
-            {index + 1}
+            <FontAwesomeIcon icon={faCheck} className="check-icon"/>
           </div>
         )}
       </Step>
@@ -68,7 +70,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
             className={`indexedStep ${accomplished ? "accomplished" : null}`}
             onClick={() => onPageNumberClick("5")}
           >
-            {index + 1}
+            <FontAwesomeIcon icon={faCheck} className="check-icon"/>
           </div>
         )}
       </Step>
