@@ -6,7 +6,7 @@ import Facebook from '../assets/facebook.png';
 import Google from '../assets/google.png';
 import Apple from '../assets/apple.png';
 
-function Login() {
+function Register() {
   return (
     <div className='background-login-signup'>
         <div className='logo-container'>
@@ -18,8 +18,9 @@ function Login() {
           <div className='login-header'>Login</div>
           <TextWithIcon icon="fa fa-user" placeholder="Username" />
           <TextWithIcon icon="fa fa-user" placeholder="Password" />
-          <button className='login-button'>Login</button>
-          <div className='login-footer-statement'>Don't have account? <a href='*' className='login-footer-statement-register' >Register</a></div>
+          <TextWithIcon icon="fa fa-user" placeholder="Mobile" />
+          <TextWithIcon icon="fa fa-user" placeholder="Email" />
+          <button className='login-button'>Register</button>
           <div className='login-footer-continue-with-element'>
             <div className='login-footer-line'></div>
             <div className='continue-with'>Continue With</div>
@@ -36,4 +37,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Register
