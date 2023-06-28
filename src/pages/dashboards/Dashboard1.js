@@ -1,5 +1,4 @@
 import React from 'react'
-import TextBox from '../../components/TextBox'
 
 function Dashboard1() {
 
@@ -7,17 +6,17 @@ function Dashboard1() {
     <div>
       <div className='dashboard-body'>
         <div className='dashboard-row'>
-          <TextBox placeholder='Name' />
-          <TextBox placeholder='Mobile' />
-          <TextBox placeholder='Secondary Mobile Number' />
+        <input type='text' className='text-box-plain' placeholder='Name'/>
+        <input type='text' className='text-box-plain' placeholder='Mobile'/>
+        <input type='text' className='text-box-plain' placeholder='Secondary Mobile Number'/>
         </div>
         <div className='dashboard-subheading'>
           Address:
         </div>
         <div className='dashboard-row'>
-          <TextBox placeholder='Door No' />
-          <TextBox placeholder='Area' />
-          <TextBox placeholder='City' />
+        <input type='text' className='text-box-plain' placeholder='Door No'/>
+        <input type='text' className='text-box-plain' placeholder='Area'/>
+        <input type='text' className='text-box-plain' placeholder='City'/>
         </div>
         <div className='dashboard-row'>
           <select className='text-box-plain' value='State'>
@@ -28,7 +27,7 @@ function Dashboard1() {
             <option value='Country'>Country</option>
             <option value='india'>India</option>
           </select>
-          <TextBox placeholder='Pincode' />
+          <input type='text' className='text-box-plain' placeholder='Pincode'/>
         </div>
       </div>
      

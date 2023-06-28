@@ -1,6 +1,5 @@
 import React from 'react'
 import FileInputBox from '../../components/FileInputBox'
-import TextBox from '../../components/TextBox'
 
 function Dashboard4() {
 
@@ -10,7 +9,8 @@ function Dashboard4() {
         <div className='dashboard-row'>
           <FileInputBox customClass='three' placeholder='Adoption Papers' />
           <FileInputBox customClass='three' placeholder='Face Recognition' />
-          <TextBox placeholder='Bill of Sale' />
+          <input type='text' className='text-box-plain' placeholder='Bill Of Sale'/>
+
         </div>
         <div>
           Pet Image All Sides
@@ -25,8 +25,8 @@ function Dashboard4() {
           Identification Mark
         </div>
         <div className='dashboard-row'>
-          <TextBox placeholder='Identification mark 1' />
-          <TextBox placeholder='Identification mark 2' />
+        <input type='text' className='text-box-plain' placeholder='Identification mark 1'/>
+        <input type='text' className='text-box-plain' placeholder='Identification mark 2'/>
         </div>
       </div>
     </div>

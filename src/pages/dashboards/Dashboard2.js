@@ -1,28 +1,27 @@
 import React from 'react'
-import TextBox from '../../components/TextBox'
 
 function Dashboard2() {
   return (
     <div>
       <div className='dashboard-body'>
         <div className='dashboard-row'>
-          <TextBox placeholder='Pet Name' />
-          <TextBox placeholder='Pet Breed' />
-          <TextBox placeholder='Birth Date' />
+        <input type='text' className='text-box-plain' placeholder='Pet Name'/>
+        <input type='text' className='text-box-plain' placeholder='Pet Breed'/>
+        <input type='text' className='text-box-plain' placeholder='Birth Date'/>
         </div>
 
         <div className='dashboard-row'>
-          <TextBox placeholder='Vaccination' />
-          <TextBox placeholder='Pet Age' />
-          <TextBox placeholder='Sex' />
+        <input type='text' className='text-box-plain' placeholder='Vaccination'/>
+        <input type='text' className='text-box-plain' placeholder='Pet Age'/>
+        <input type='text' className='text-box-plain' placeholder='Sex'/>
         </div>
         <div className='dashboard-subheading'>
           Doctor Info:
         </div>
         <div className='dashboard-row'>
-          <TextBox placeholder="Vet Doctor's Name" />
-          <TextBox placeholder="Vet Doctor's Mobile Number" />
-          <TextBox placeholder='Location' />
+        <input type='text' className='text-box-plain' placeholder="Vet Doctor's Name"/>
+        <input type='text' className='text-box-plain' placeholder="Vet Doctor's Address"/>
+        <input type='text' className='text-box-plain' placeholder='Location'/>
         </div>
       </div>
     </div>

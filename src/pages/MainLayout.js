@@ -13,7 +13,7 @@ import Dashboard5 from './dashboards/Dashboard5';
 
 
 
-function ProgressBar() {
+function MainLayout() {
   const [activeStep, setActiveStep] = useState(1);
   const navigate = useNavigate();
   const handleNext = () => {
@@ -130,4 +130,4 @@ function ProgressBar() {
   );
 }
 
-export default ProgressBar;
+export default MainLayout;
