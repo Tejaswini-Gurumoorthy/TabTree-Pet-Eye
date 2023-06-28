@@ -4,6 +4,8 @@ import MultiStepProgressBar from '../components/MultiStepProgressBar'
 import FileInputBox from '../components/FileInputBox'
 import TextBox from '../components/TextBox'
 import { useNavigate } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 function Dashboard4() {
   const navigate = useNavigate();
@@ -11,6 +13,9 @@ function Dashboard4() {
   return (
     <div>
       <NavBar />
+      <FontAwesomeIcon icon={faTimesCircle} className='close-button' onClick={()=>{
+        navigate('/')
+      }}/>
       <MultiStepProgressBar page={1} />
       <div className='dashboard-body'>
         <div className='dashboard-row'>

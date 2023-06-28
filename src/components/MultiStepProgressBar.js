@@ -28,7 +28,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
         <Step>
           {({ accomplished }) => (
             <div
-              className={`indexedStep ${accomplished ? "accomplished" : null}`}
+              className={`indexedStep ${accomplished ? "accomplished" : null} stepper-item`}
               onClick={() => onPageNumberClick("1")}
             >
               <FontAwesomeIcon icon={faCheck} className="check-icon" />

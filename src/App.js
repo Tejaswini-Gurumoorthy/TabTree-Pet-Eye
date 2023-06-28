@@ -7,6 +7,7 @@ import Dashboard3 from './pages/Dashboard3';
 import Dashboard4 from './pages/Dashboard4';
 import Dashboard5 from './pages/Dashboard5';
 import Register from './pages/Register';
+import ProgressBarTest from './pages/ProgressBarTest';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path= '/dashboard3' element={<Dashboard3/>}/>
         <Route path= '/dashboard4' element={<Dashboard4/>}/>
         <Route path= '/dashboard5' element= {<Dashboard5/>}/>
+        <Route path= '/progressbartest' element={<ProgressBarTest/>}/>
       </Routes>
    </BrowserRouter>
 

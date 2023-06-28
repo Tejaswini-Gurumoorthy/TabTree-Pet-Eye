@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import NavBar from '../components/NavBar'
 import MultiStepProgressBar from '../components/MultiStepProgressBar'
 import { useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 function Dashboard5() {
     const [chechked, setChecked] = useState(false);
@@ -10,6 +12,9 @@ function Dashboard5() {
     return (
         <div>
             <NavBar />
+            <FontAwesomeIcon icon={faTimesCircle} className='close-button' onClick={() => {
+                navigate('/')
+            }} />
             <MultiStepProgressBar page={1} />
             <div className='terms-and-conditions'>
                 Here are a few examples of how this agreement can help you:
