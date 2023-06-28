@@ -1,22 +1,16 @@
-import React, { useState } from 'react'
-import NavBar from '../components/NavBar'
-import MultiStepProgressBar from '../components/MultiStepProgressBar'
-import { useNavigate } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import React, { useEffect, useState } from 'react'
+
 
 function Dashboard5() {
     const [chechked, setChecked] = useState(false);
-    const navigate = useNavigate();
+    useEffect(()=>{
+        console.log('Checked: ',chechked);
+    },[chechked])
 
     return (
         <div>
-            <NavBar />
-            <FontAwesomeIcon icon={faTimesCircle} className='close-button' onClick={() => {
-                navigate('/')
-            }} />
-            <MultiStepProgressBar page={1} />
-            <div className='terms-and-conditions'>
+            <div className='terms-and-conditions-body'>
+                <div className='terms-and-conditions'>
                 Here are a few examples of how this agreement can help you:
                 <ul>
                     <li>
@@ -43,8 +37,9 @@ function Dashboard5() {
                         can be canceled if the products ordered have incorrect prices due to various errors.
                     </li>
                 </ul>
-            </div>
-            <div className='terms-and-conditions'>
+                </div>
+           
+            <div className='terms-and-conditions-checkbox'>
                 <input type='checkbox' onChange={(e) => {
                     if (e.target.checked) {
                         setChecked(true);
@@ -55,11 +50,7 @@ function Dashboard5() {
                 }} />
                 <label>I acknowledge that I am the legal owner of the pet and I agree to all the terms and conditions associated with the registration process. </label>
             </div>
-            <div className='dashboard-footer'>
-                <button className='button-next' onClick={() => {
-                    navigate('/')
-                }}>Next</button>
-            </div>
+        </div>
         </div>
     )
 }

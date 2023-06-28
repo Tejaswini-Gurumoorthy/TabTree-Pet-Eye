@@ -99,6 +99,10 @@
   justify-content: space-around;
 }
 
+.brand-logo{
+  cursor: pointer;
+}
+
 .logo {
   width: 344.174560546875px;
   height: 252.38677978515625px;
@@ -109,12 +113,17 @@
 
 .icon-input-container {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .text-icon {
+  color: #C8C8C8;
+  height: 20px;
+  width: 20px;
   position: absolute;
   left: 10px;
-  top: 50%;
+  top: 37.5%;
   transform: translateY(-50%);
 }
 
@@ -125,7 +134,12 @@
   border: none;
   border-radius: 10px;
   font-size: 20px;
-  padding-left: 35px; /* Adjust the padding */
+  padding-left: 50px;
+}
+
+.input-field.password{
+  -webkit-text-security: disc;
+  text-security: disc;
 }
 
 
@@ -168,25 +182,28 @@
 .text-box-plain {
   height: 55px;
   width: 325px;
+  order: 1;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
+  color: #C8C8C8;
   border: 1px #C8C8C8 solid;
   border-radius: 10px;
   padding-top: 15px;
   padding-bottom: 16px;
   padding-left: 32px;
-  
-  order: 1;
-
-
+}
+.text-box-plain::placeholder{
+  font-size: 16px;
+  font-weight: 400;
+  color: #C8C8C8;
 }
 
 
 
 /* Dashboard */
 .dashboard-body {
-  margin-left: 85px;
-  margin-right: 80px;
+  margin-left: 6.64vw;
+  margin-right: 6.25vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -195,6 +212,7 @@
 
 .dashboard-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 40px 0;
 }
@@ -205,7 +223,10 @@
 
 /* button */
 .dashboard-footer {
-  bottom: 0%;
+  position: relative;
+  padding-top: 7.5vh;
+  bottom: 0;
+  right: 0;
   display: flex;
   justify-content: flex-end;
   margin-right: 80px;
@@ -244,8 +265,7 @@
 
 .file-input-container {
   border: 1px #C8C8C8 solid;
-  height: 55px;
-  width: 325px;
+  height: 7.63vh;
   border-radius: 10px;
   padding-top: 15px;
   padding-bottom: 16px;
@@ -253,8 +273,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: blue; */
-
+}
+.file-input-container.four{
+    width: 19.29vw;
+}
+.file-input-container.three{
+  width: 25.39vw;
+}
+.pet-images{
+  width: 19.2vw;
+  padding-right: 3.2vh;
 }
 
 .file-input-icon-wrapper {
@@ -269,119 +297,37 @@
   order: 1;
 }
 
-.check-icon{
-  height: 15px;
-  width: 15px;
-  color: #C8C8C8;
-}
-.indexedStep {
-  color: rgb(190, 190, 190);
-  width: 30px;
-  height: 30px;
-  font-size: 12px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(206, 206, 206);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.indexedStep.accomplished {
-  background-color: #C87D25;
-  color: white;
-  border-style: none;
-}
-
-.RSPBprogressBar {
-  height: 2px;
-  width: 68%;
-  line-height: 1;
-  border-radius: 10px;
-  position: relative;
-  background-color: rgb(207, 207, 207);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 0;
-  margin: 20px auto;
-}
-
-.RSPBprogressBar .RSPBstep {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 0;
+.close-button {
   position: absolute;
-  transform: translateX(-50%);
-  transition-property: all;
-  transition-timing-function: ease;
+  top: 12.5%;
+  right: 1.95%;
+  cursor: pointer;
 }
 
-.RSPBprogressBar .RSPBprogressBarText {
-  color: white;
-  font-size: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* terms and conditions */
+.terms-and-conditions-body{
+  padding-left: 5.70vw;
+  padding-right: 13.2vh;
+  padding-top: 6.25vh;
 }
-
-.RSPBprogressBar .RSPBprogression {
-  position: absolute;
-  transition: width 0.3s ease;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  border-radius: 10px;
-  background: #C87D25;
-  z-index: -1;
+.terms-and-conditions{
+  padding-bottom: 13.33vh;
 }
-
-@media screen and (max-width: 480px) {
-  .indexedStep {
-    width: 15px;
-    height: 15px;
-    font-size: 6px;
-  }
-}
-
-.terms-and-conditions {
-  margin-left: 5.7vw;
-  margin-right: 13.2vw;
-}
-.progress-bar-headings-wrapper{
-  display: flex;
-  justify-content: space-between;
-  width: 75%;
-  margin: 20px auto;
-}
-.progress-bar-headings{
-  font-weight: 700;
-  font-size: 16px;
-  color: #C87D25;
-}
-
-/* progress bar test */
-
-.stepper-wrapper {
-  margin-top: auto;
+ /* progress bar */
+ .stepper-wrapper {
+  margin-top: 5.5vh;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
 .stepper-item {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 1;
-
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
 }
 
 .stepper-item::before {
@@ -389,9 +335,8 @@
   content: "";
   border-bottom: 2px solid #ccc;
   width: 100%;
-  top: 20px;
+  top: 15px;
   left: -50%;
-  z-index: 2;
 }
 
 .stepper-item::after {
@@ -399,10 +344,11 @@
   content: "";
   border-bottom: 2px solid #ccc;
   width: 100%;
-  top: 20px;
+  top: 15px;
   left: 50%;
-  z-index: 2;
 }
+
+
 
 .stepper-item .step-counter {
   position: relative;
@@ -410,16 +356,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: #ccc;
   margin-bottom: 6px;
 }
 
-.stepper-item.active {
-  font-weight: bold;
+.stepper-item.active .step-counter{
+  background-color: #C87D25;
 }
+
+.stepper-item.active::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #C87D25;
+  width: 0%;
+  top: 20px;
+  left: 50%;
+}
+
 
 .stepper-item.completed .step-counter {
   background-color: #C87D25;
@@ -430,7 +386,7 @@
   content: "";
   border-bottom: 2px solid #C87D25;
   width: 100%;
-  top: 20px;
+  top: 15px;
   left: 50%;
   z-index: 3;
 }
@@ -438,13 +394,32 @@
 .stepper-item:first-child::before {
   content: none;
 }
+
 .stepper-item:last-child::after {
   content: none;
 }
 
-.close-button {
+.check-icon {
+  color: #FFFFFF;
+  height: 20px;
+  width: 20px;
+}
+
+.progress-bar {
+  position: relative;
+  height: 3px;
+  background-color: #ccc;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.progress-bar-line {
   position: absolute;
-  top: 12.5%;
-  right: 1.95%;
-  cursor: pointer;
+  height: 100%;
+  background-color: #C87D25;
+}
+.progress-bar-headings{
+  font-weight: 700;
+  font-size: 16px;
+  color: #C87D25;
 }

@@ -20,9 +20,9 @@ function Login() {
       </div>
       <div className='login-form'>
         <div className='login-header'>Login</div>
-        <TextWithIcon icon="fa fa-user" placeholder="Username" />
-        <TextWithIcon icon="fa fa-user" placeholder="Password" />
-        <button className='login-button' onClick={() => { navigate('/dashboard1') }}>Login</button>
+        <TextWithIcon iconProp="user" placeholder="Username" password={false}/>
+        <TextWithIcon iconProp="password" placeholder="Password" password={true}/>
+        <button className='login-button' onClick={() => { navigate('/dashboards') }}>Login</button>
         <div className='login-footer-statement'>Don't have account? <a href='/register' className='login-footer-statement-register' >Register</a></div>
         <div className='login-footer-continue-with-element'>
           <div className='login-footer-line'></div>
@@ -30,9 +30,9 @@ function Login() {
           <div className='login-footer-line'></div>
         </div>
         <div className='login-signin-options'>
-          <img src={Facebook} alt="facebook logo" />
-          <img src={Google} alt="Google logo" />
-          <img src={Apple} alt='Apple logo' />
+          <img className='brand-logo' src={Facebook} alt="facebook logo" />
+          <img className='brand-logo' src={Google} alt="Google logo" />
+          <img className='brand-logo' src={Apple} alt='Apple logo' />
         </div>
 
       </div>
