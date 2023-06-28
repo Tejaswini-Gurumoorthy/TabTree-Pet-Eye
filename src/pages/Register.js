@@ -18,10 +18,10 @@ function Register() {
             </div>
             <div className='login-form'>
                 <div className='login-header'>Register</div>
-                <TextWithIcon iconProp="user" placeholder="Username" />
-                <TextWithIcon iconProp="password" placeholder="Password" />
-                <TextWithIcon iconProp="mobile" placeholder="Mobile" />
-                <TextWithIcon iconProp="email" placeholder="Email" />
+                <TextWithIcon iconProp="user" placeholder="Username" password={false}/>
+                <TextWithIcon iconProp="password" placeholder="Password" password={true}/>
+                <TextWithIcon iconProp="mobile" placeholder="Mobile" password={false}/>
+                <TextWithIcon iconProp="email" placeholder="Email" password={false}/>
                 <button className='login-button'  onClick={() => { navigate('/dashboards') }}>Register</button>
                 <div className='login-footer-continue-with-element'>
                     <div className='login-footer-line'></div>
